@@ -15,3 +15,5 @@ This project requires you to utilize your HTML and CSS skills to build out a per
 6. my personal blog (https://www.blogger.com/profile/12124067201509144327)
 7. CSS Flexbox Layout Guide (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 8. CSS Grid Layout Guide (https://css-tricks.com/snippets/css/complete-guide-grid/)
+9. CSS Horizontal Navigation Bar (https://www.w3schools.com/css/css_navbar_horizontal.asp)
+10. Responsive Navigation Bar with hamburger menu (https://www.coding2go.com/)

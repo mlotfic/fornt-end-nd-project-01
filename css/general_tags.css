@@ -66,3 +66,41 @@ a {
   padding-left: 0px;
   line-height: 20px;
 }
+
+
+/* ---------------- nav bar ----------------------- */
+nav {
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav li {
+  font-family: inherit;
+  height: 40px;
+  padding: 0 5px;
+}
+
+nav a {
+  font-family: inherit;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #069;
+}
+
+/* Change the link color to text :white , background: #069 on hover */
+nav a:hover {
+  background-color: #069;
+  color: white;
+}
