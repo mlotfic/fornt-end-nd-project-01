@@ -9,6 +9,7 @@
     margin: 5px;
 }
 
+/* display: flex; #1 */
 .cards {
     display: flex;
     flex-wrap: wrap;

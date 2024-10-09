@@ -109,6 +109,7 @@ nav li {
   padding: 0 5px;
 }
 
+/* display: flex; #3 */
 nav a {
   font-family: inherit;
   height: 100%;
