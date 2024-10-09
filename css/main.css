@@ -9,15 +9,13 @@
 /* ----------------------- Page Container ----------------------- */
 /* Initially each element has its own row for small screens */
 .container {
-  display:grid;
-  grid-template-columns: auto;
-  
-  grid-template-areas: 
-  "hd hd hd hd hd hd hd hd"
-  "sd sd sd sd sd sd sd sd"
-  "main main main main main main main main"
-  "ft ft ft ft ft ft ft ft";
-  padding-left: 30px;
+  display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd sd sd main main main main"
+    "ft ft ft ft ft ft ft ft";
 }
 
 /* Assign grid area below */
@@ -72,19 +70,16 @@
   display: block;  
 }
 
-
-
-      
-
 /* If Screen Is Wide Enough */
-@media(min-width:480px) {
+@media(max-width:900px) {
 .container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "sd sd sd sd main main main main"
-    "ft ft ft ft ft ft ft ft";
+  display:grid;
+  grid-template-columns: auto;  
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd"
+  "sd sd sd sd sd sd sd sd"
+  "main main main main main main main main"
+  "ft ft ft ft ft ft ft ft";
+  padding-left: 30px;
   }
 }

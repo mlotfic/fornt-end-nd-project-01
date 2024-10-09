@@ -9,13 +9,19 @@
     margin: 5px;
 }
 
+
+.gallary-div {
+  display: flex; 
+  align-content: center;
+  width: 100%;
+}
+
 /* display: flex; #1 */
 .cards {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     flex-direction: row;
-    max-height: 800px; 
   }
 
 .cards img {
@@ -27,16 +33,14 @@
 
 /* ----------------------- Page Container ----------------------- */
 /* Initially each element has its own row for small screens */
-.container-post {
+.container-post{
   display:grid;
   grid-template-columns: auto;
-  
+  grid-template-rows: auto;
   grid-template-areas: 
   "hd hd hd hd hd hd hd hd"
-  "main main main main main main main main"
-  "sd sd sd sd sd sd sd sd"  
+  "main main main main main sd sd sd"     
   "ft ft ft ft ft ft ft ft";
-  padding-left: 30px;
 }
 
 /* Assign grid area below */
@@ -85,15 +89,48 @@
   background-color: #05acfa;
 }
 
-/* If Screen Is Wide Enough */
-@media(min-width:900px) {
-  .container-post{
+
+
+  /* If Screen Is Wide Enough */
+@media(max-width: 400px){
+  .container-post {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main sd sd sd"     
+    "ft ft ft ft ft ft ft ft";
+  }
+  /* display: flex; #1 */
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: row;
+    max-width: 400px;
+  }
+}
+
+  /* If Screen Is Wide Enough */
+@media(max-width: 900px){
+    .container-post {
       display:grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
+      grid-template-columns: auto;  
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
-      "main main main main main sd sd sd"     
+      "main main main main main main main main"
+      "sd sd sd sd sd sd sd sd"  
       "ft ft ft ft ft ft ft ft";
+      padding-left: 30px;
+      max-width: 100%;
     }
-  }
+    /* display: flex; #1 */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      flex-direction: row;
+      max-width: 900px;
+    }
+}
