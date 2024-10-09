@@ -1,0 +1,98 @@
+/* ---------------------- Import --------------------------------*/
+@import url(general_tags.css);
+@import url(font.css);
+
+.list-cl {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 3px;
+    margin: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: row;
+    max-height: 100vh; 
+    max-height: 800px; 
+  }
+
+.cards img {
+    margin: 5px;
+    border: 1px solid #057483;
+    box-shadow: 1px 1px 4px 0px rgba(41, 41, 41, 0.3); 
+    max-width: 15vw;
+}
+
+/* ----------------------- Page Container ----------------------- */
+/* Initially each element has its own row for small screens */
+.container-post {
+  display:grid;
+  grid-template-columns: auto;
+  
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd"
+  "main main main main main main main main"
+  "sd sd sd sd sd sd sd sd"  
+  "ft ft ft ft ft ft ft ft";
+  padding-left: 30px;
+}
+
+/* Assign grid area below */
+.footer-post {
+  grid-area:hd;
+}
+.footer-post {
+  grid-area:ft;
+}
+.sidebar-post {
+  grid-area:sd;
+}
+.content-post {
+  grid-area:main;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card-profile {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title-profile {
+  font-family: inherit;
+  color: #546e7a !important; 
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+
+.button-profile {
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 6px;
+  color: white;
+  background-color: #05acfa;
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width:900px) {
+  .container-post{
+      display:grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main sd sd sd"     
+      "ft ft ft ft ft ft ft ft";
+    }
+  }
