@@ -56,6 +56,10 @@ a {
   line-height: 20px;
 }
 
+b {
+  font-family: inherit;
+}
+
 /* class for display date */
 .span-date {
   color: #546e7a !important; 
@@ -68,6 +72,21 @@ a {
 }
 
 
+/* ---------------- figure ----------------------- */
+figure {
+  padding: 2px;
+  margin: auto;
+}
+
+figcaption {
+  font-family: inherit;
+  background-color: #05acfa;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
 /* ---------------- nav bar ----------------------- */
 nav {
   background-color: whitesmoke;
@@ -75,6 +94,7 @@ nav {
   justify-content: flex-end;
 }
 
+/* display: flex; #2 */
 nav ul {
   width: 100%;
   list-style: none;

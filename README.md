@@ -17,3 +17,5 @@ This project requires you to utilize your HTML and CSS skills to build out a per
 8. CSS Grid Layout Guide (https://css-tricks.com/snippets/css/complete-guide-grid/)
 9. CSS Horizontal Navigation Bar (https://www.w3schools.com/css/css_navbar_horizontal.asp)
 10. Responsive Navigation Bar with hamburger menu (https://www.coding2go.com/)
+11. HTML `<figcaption>` Tag (https://www.w3schools.com/tags/tag_figcaption.asp)
+12. Open a URL in a new tab (and not a new window) (https://stackoverflow.com/questions/4907843/open-a-url-in-a-new-tab-and-not-a-new-window)
